@@ -1,0 +1,11 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer viewLocalizer
+@inject IHtmlLocalizer<RazorClassLibrary1.Pages.ScenarioBModel> htmlLocalizer
+
+<b>Scenario B</b>
+
+<ul>
+    <li>IViewLocalizer: @viewLocalizer["Test"]</li>
+    <li>IHtmlLocalizer: @htmlLocalizer["Test"]</li>
+</ul>

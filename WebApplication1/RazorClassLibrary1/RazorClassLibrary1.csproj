@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Pages\ScenarioA.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ScenarioA.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\ScenarioAModel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ScenarioAModel.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\ScenarioC.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ScenarioC.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\ScenarioCModel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ScenarioCModel.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Pages\ScenarioA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScenarioA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\ScenarioAModel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScenarioAModel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\ScenarioC.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScenarioC.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\ScenarioCModel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScenarioCModel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+
+</Project>
